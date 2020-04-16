@@ -1,0 +1,382 @@
+@import url(reset.css);
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Handlee', cursive;
+color primario:#fa573a
+color secundario: #21242e
+*/
+
+:root {
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --breakpoint-movil: 26.563em;
+    --breakpoint-tablet: 48.00em;
+    --breakpoint-desktop: 62.750em;
+    --ancho-maximo: 1100px;
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-secundaria: 'Handlee', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+/*HEADER*/
+
+header .nav_top {
+    background-color: var(--color-secundario);
+    padding: 20px 0;
+}
+
+header .nav_top a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+header .nav_top a span {
+    display: none;
+}
+
+header .nav_top .row {
+    justify-content: space-between;
+}
+
+header .nav_top .row div {
+    padding: 0 10px;
+    ;
+}
+
+header .nav_top i {
+    color: var(--color-principal);
+}
+
+header nav {
+    padding: 20px 20px;
+}
+
+header .logo {
+    width: 30%;
+    margin-right: 60%;
+}
+
+header .logo img {
+    max-width: 110px;
+}
+
+header .hamburguesa {
+    cursor: pointer;
+    width: 10%;
+}
+
+header .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin: 0.625em;
+    width: 1.875em;
+}
+
+header nav .row {
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    width: 100%;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 1.250em;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #aaa;
+    color: #aaa;
+}
+
+header nav ul li .activo {
+    color: var(--color-principal);
+}
+
+@media (min-width: 48.000em) {
+    header .nav_top a span {
+        display: inline;
+    }
+}
+
+@media (min-width: 62.75em) {
+    header .hamburguesa {
+        display: none;
+    }
+
+    header .logo {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    header nav ul {
+        width: 50%;
+        display: flex;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        padding: 0.8em;
+        text-align: center;
+        border-bottom: 0px;
+    }
+
+}
+
+/*HERO*/
+
+.hero {
+    background-image: url(../images/fondo.jpg);
+    height: 35em;
+    background-size: cover;
+    background-position: center center;
+    background-color: #777777;
+    background-blend-mode: multiply;
+    display: flex;
+}
+
+.hero>div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-family: var(--fuente-secundaria);
+    color: white;
+}
+
+.hero h2 {
+    color: var(--color-principal);
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+    color: white;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-principal);
+    padding: 1.15em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--color-principal);
+    margin: 1em 0;
+}
+
+.boton i {
+    transition: transform 0.5s;
+}
+
+.boton:hover {
+    color: var(--color-principal);
+    background-color: transparent;
+}
+
+.boton:hover i {
+    transform: translateX(5px);
+}
+
+.hero .social li {
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 1em;
+}
+
+.hero .social li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*MAIN OUR SERVICE*/
+
+main section {
+    padding: 2.125em 0;
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuente-secundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--color-principal);
+}
+
+main section .underline {
+    position: relative;
+    color: var(--color-principal);
+    width: 5em;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+main section .underline hr {
+    border-color: var(--color-principal);
+    position: absolute;
+    top: 6px;
+    width: 100%;
+}
+
+main section .underline span {
+    text-align: center;
+    display: block;
+}
+
+main .row {
+    flex-wrap: wrap;
+    padding: 0 0.825em;
+}
+
+main section .row article {
+    width: 100%;
+    padding: 1.825em 0;
+    border-bottom: 1px solid #aaa;
+}
+
+main section article div i {
+    color: var(--color-principal);
+    font-size: 2em;
+    padding: 0.8rem;
+    border: 2px solid var(--color-principal);
+}
+
+main section article .fa-truck {
+    transform: rotateY(180deg);
+}
+
+main section article h3 {
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+.enlace {
+    text-decoration: none;
+    color: var(--color-principal);
+    margin-top: 1em;
+    display: block;
+}
+
+@media(min-width: 48.000em) {
+    main section .row article {
+        width: 50%;
+        padding: 1.825em 0.825em;
+        border-bottom: 0;
+        border-left: 1px solid #aaa;
+        margin-bottom: 1em;
+    }
+
+    main section .row article:nth-child(3) {
+        width: 100%;
+    }
+}
+
+main section .marco {
+    border: 3px solid var(--color-principal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main section .columna:hover .marco,
+main section .columna:hover img {
+    transform: rotateZ(0deg);
+}
+
+@media(min-width: 62.750em) {
+    main section .row article {
+        width: 33.33%;
+    }
+
+    main section .row article:nth-child(3) {
+        width: 33.33%;
+    }
+}
+
+/* MAIN ABOUT US*/
+
+main section .row .columna {
+    border: 0;
+}
+
+main section .row .columna h4 {
+    margin-bottom: 1em;
+    color: var(--color-principal);
+}
+
+@media(min-width: 48.000em) {
+    main section .row .columna {
+        width: 50%;
+    }
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--color-secundario);
+    padding: 1.825em 0;
+}
+
+footer p,
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
