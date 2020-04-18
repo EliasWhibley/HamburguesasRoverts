@@ -400,15 +400,20 @@ main section .row .comida h3 {
 
 }
 
+main section .row .comida p {
+    line-height: 1.7em;
+    padding: 0em 0.5em;
+}
+
 main section .row .comida a {
     font-weight: bold;
+    padding: 0em 0.5em;
 }
 
 main section .row .comida h4 {
     color: var(--color-principal);
-    padding-bottom: 1em;
     font-weight: bold;
-
+    padding: 0em 0.5em 1em 0.5em;
 }
 
 
