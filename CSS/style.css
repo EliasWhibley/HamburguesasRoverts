@@ -367,6 +367,7 @@ main section .row .columna h4 {
 main section .row .comida {
     width: 50%;
     padding: 1em;
+    border: 0;
 }
 
 main section .row .comida .img_acompanado {
@@ -392,11 +393,23 @@ main section .row .comida .flotante .opacidad {
 }
 
 main section .row .comida h3 {
-    padding: 1em 0;
+    padding: 0em 0.5em;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+
 }
 
+main section .row .comida a {
+    font-weight: bold;
+}
+
+main section .row .comida h4 {
+    color: var(--color-principal);
+    padding-bottom: 1em;
+    font-weight: bold;
+
+}
 
 
 /*FOOTER*/
