@@ -429,6 +429,40 @@ main section .row .comida h4 {
     }
 }
 
+/* MENU */
+
+.black {
+    background-color: var(--color-secundario);
+}
+
+main section .container h2 {
+    color: white;
+}
+
+.menu1 {
+    padding: 2em;
+}
+
+main section ul {
+    flex-wrap: wrap;
+}
+
+main section ul li {
+    width: 100%;
+}
+
+main section ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.8em;
+}
+
+main section ul li a:hover {
+    background-color: var(--color-principal);
+}
+
+
 /*FOOTER*/
 
 footer {
