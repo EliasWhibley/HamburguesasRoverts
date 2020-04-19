@@ -474,7 +474,7 @@ main section .menu1 .today h3 {
 
 main section .menu1 .today .lineita {
     width: 4em;
-    padding: 0.5em;
+    padding: 0.7em;
 }
 
 main section .menu1 .today .lineita hr {
@@ -484,10 +484,11 @@ main section .menu1 .today .lineita hr {
 main section .menu1 .today p {
     color: gainsboro;
     font-size: 0.8em;
+    line-height: 1.7em;
 }
 
 main section .menu2 {
-    padding: 0.5em;
+    padding: 2em;
 }
 
 main section .menu2 article {
@@ -520,11 +521,49 @@ main section .menu2 .textart h3 {
 main section .menu2 .textart p {
     color: gainsboro;
     font-size: 0.8em;
+    line-height: 1.7em;
 }
 
 main section .menu2 .textart .textoref .enlace i {
     border: 0;
     font-size: 1em;
+}
+
+@media(min-width: 48.000em) {
+    main section .menu1 {
+        width: 30%;
+        flex-wrap: wrap;
+    }
+
+    main section .menu1 .today {
+        padding-top: 50px;
+    }
+
+    main section .menu2 {
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    main section .menu2 .producto {
+        width: 100%;
+        border: 0;
+    }
+
+    main section .menu2 .producto:nth-child(3) {
+        width: 100%;
+    }
+
+    main section .menu2 .producto .imgart {
+        width: 25%;
+    }
+
+    main section .menu2 .producto .textart {
+        width: 75%;
+    }
+
+    main section .menu2 .producto .precio {
+        width: 20%;
+    }
 }
 
 /*FOOTER*/
