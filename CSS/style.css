@@ -435,12 +435,16 @@ main section .row .comida h4 {
     background-color: var(--color-secundario);
 }
 
-main section .container h2 {
+#white {
     color: white;
 }
 
 .menu1 {
     padding: 2em;
+}
+
+main section .menu1 nav {
+    margin: 0 0 1em 0;
 }
 
 main section ul {
@@ -458,10 +462,70 @@ main section ul li a {
     padding: 0.8em;
 }
 
+
 main section ul li a:hover {
     background-color: var(--color-principal);
 }
 
+main section .menu1 .today h3 {
+    color: white;
+    font-weight: bold;
+}
+
+main section .menu1 .today .lineita {
+    width: 4em;
+    padding: 0.5em;
+}
+
+main section .menu1 .today .lineita hr {
+    border-color: var(--color-principal);
+}
+
+main section .menu1 .today p {
+    color: gainsboro;
+    font-size: 0.8em;
+}
+
+main section .menu2 {
+    padding: 0.5em;
+}
+
+main section .menu2 article {
+    border-bottom: 0;
+}
+
+main section .menu2 .textart {
+    flex-wrap: wrap;
+}
+
+main section .menu2 .textart .textoref {
+    width: 80%;
+}
+
+main section .menu2 .textart .precio {
+    width: 20%;
+}
+
+main section .menu2 .textart .precio h2 {
+    display: block;
+    color: var(--color-principal);
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+main section .menu2 .textart h3 {
+    color: white;
+}
+
+main section .menu2 .textart p {
+    color: gainsboro;
+    font-size: 0.8em;
+}
+
+main section .menu2 .textart .textoref .enlace i {
+    border: 0;
+    font-size: 1em;
+}
 
 /*FOOTER*/
 
